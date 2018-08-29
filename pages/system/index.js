@@ -1,7 +1,8 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
+var QQMapWX = require('../../libs/qqmap-wx-jssdk.js');
+var qqmapsdk; // 实例化API核心类
 Page({
 
   /**
@@ -15,7 +16,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    qqmapsdk = new QQMapWX({
+      key: 'UPPBZ-3S6C2-BT2U6-CYLQ7-HPEEF-XHFSU'
+    });
   },
 
   /**
@@ -29,7 +32,19 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+    // 调用接口
+    qqmapsdk.search({
+      keyword: '酒店',
+      success: function (res) {
+        console.log(res);
+      },
+      fail: function (res) {
+        console.log(res);
+      },
+      complete: function (res) {
+        console.log(res);
+      }
+    });
   },
 
   /**

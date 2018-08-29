@@ -13,6 +13,8 @@ const formatNumber = n => {
   n = n.toString()
   return n[1] ? n : '0' + n
 }
+let key ='f8d475ade11e8db64375c94122ee3053';
+let myAmapFun = new amapFile.AMapWX({ key });
 
 module.exports = {
   formatTime: formatTime

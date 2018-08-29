@@ -1,8 +1,9 @@
 {
   "pages":[
+    "pages/system/index",
     "pages/index/index",
     "pages/finish/index",
-    "pages/system/index",
+    
     "pages/test/index",
     "pages/video/index"
   ],

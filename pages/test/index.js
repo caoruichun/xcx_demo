@@ -15,7 +15,21 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    wx.request({
+      url: 'http://v.juhe.cn/dream/category?key=1763de4de5d45554e9a7177763a8e196',
+      method: 'GET',
+      dataType: 'json',
+      responseType: 'text',
+      success: function (res) {
+        console.log(res)
+      },
+      fail: function (res) {
+        console.log(res)
+      },
+      complete: function (res) {
+        console.log(res)
+      },
+    })
   },
 
   /**
