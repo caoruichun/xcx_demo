@@ -7,7 +7,7 @@
 </view>
 <view class="map_text" wx:if="{{textData.name}}">
   <view class="map-1" bindtap="getRoute">
-    <image src="/images/jt.png"></image>
+    <image src="/img/1.png"></image>
     <view>路线</view>
   </view>
   <text class="h1">{{textData.name}}</text>
