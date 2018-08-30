@@ -1,1 +1,9 @@
-{}
+{
+  "usingComponents": {
+    "i-button": "../../../dist/button/index",
+    "i-notice-bar": "../../../dist/notice-bar/index",
+    "i-sticky": "../../../dist/sticky/index",
+    "i-sticky-item": "../../../dist/sticky-item/index",
+    "i-count-down": "../../../dist/count-down/index"
+  }
+}
