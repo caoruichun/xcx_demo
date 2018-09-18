@@ -1,0 +1,9 @@
+<view>
+  <view>
+    <text bindtap="openActionsheet">小龙女</text>
+  </view>
+</view>
+<view class="tui-fixed-foot">
+  <text bindtap="openActionsheetDe">删除</text>
+  <text bindtap="openActionsheetSh">菜单</text>
+</view>
